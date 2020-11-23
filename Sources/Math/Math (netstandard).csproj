@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <OutputPath>..\..\Release\</OutputPath>
     <AssemblyName>AForge.Math</AssemblyName>
+    <RootNamespace>AForge.Math</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

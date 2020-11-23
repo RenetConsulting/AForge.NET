@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
@@ -6,6 +6,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <DefineConstants>TRACE;MONO</DefineConstants>
     <AssemblyName>AForge</AssemblyName>
+    <RootNamespace>AForge</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

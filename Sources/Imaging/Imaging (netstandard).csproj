@@ -5,6 +5,7 @@
     <OutputPath>..\..\Release\</OutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>AForge.Imaging</AssemblyName>
+    <RootNamespace>AForge.Imaging</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
