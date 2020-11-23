@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math (netstandard)", "Math\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.DirectShow (netcoreapp)", "Video.DirectShow\Video.DirectShow (netcoreapp).csproj", "{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controls (netcoreapp)", "Controls\Controls (netcoreapp).csproj", "{0CAA5752-0785-4122-91DF-04F33BAAEF62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CAA5752-0785-4122-91DF-04F33BAAEF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CAA5752-0785-4122-91DF-04F33BAAEF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CAA5752-0785-4122-91DF-04F33BAAEF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CAA5752-0785-4122-91DF-04F33BAAEF62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
