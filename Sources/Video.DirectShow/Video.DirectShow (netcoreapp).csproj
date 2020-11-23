@@ -6,6 +6,7 @@
     <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
     <OutputPath>..\..\Release\</OutputPath>
     <AssemblyName>AForge.Video.DirectShow</AssemblyName>
+    <RootNamespace>AForge.Video.DirectShow</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp3.1|AnyCPU'">
