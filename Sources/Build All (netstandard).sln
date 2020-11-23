@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video (netstandard)", "Video\Video (netstandard).csproj", "{320CF9D6-98E3-4157-BEAF-F08ADA096D1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core (netstandard)", "Core\Core (netstandard).csproj", "{F2EBA401-4585-4BA2-8E5C-F2282E27E079}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Imaging (netstandard)", "Imaging\Imaging (netstandard).csproj", "{37EF159D-4B95-4FE2-97E5-C816B1AF7F5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Imaging.Formats (netstandard)", "Imaging.Formats\Imaging.Formats (netstandard).csproj", "{6274D185-1989-4193-9D56-A236E2777D60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math (netstandard)", "Math\Math (netstandard).csproj", "{5BEB23F8-BCE9-4CCE-A81D-382897820861}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.DirectShow (netcoreapp)", "Video.DirectShow\Video.DirectShow (netcoreapp).csproj", "{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{320CF9D6-98E3-4157-BEAF-F08ADA096D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320CF9D6-98E3-4157-BEAF-F08ADA096D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320CF9D6-98E3-4157-BEAF-F08ADA096D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320CF9D6-98E3-4157-BEAF-F08ADA096D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2EBA401-4585-4BA2-8E5C-F2282E27E079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2EBA401-4585-4BA2-8E5C-F2282E27E079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2EBA401-4585-4BA2-8E5C-F2282E27E079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2EBA401-4585-4BA2-8E5C-F2282E27E079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37EF159D-4B95-4FE2-97E5-C816B1AF7F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37EF159D-4B95-4FE2-97E5-C816B1AF7F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37EF159D-4B95-4FE2-97E5-C816B1AF7F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37EF159D-4B95-4FE2-97E5-C816B1AF7F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6274D185-1989-4193-9D56-A236E2777D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6274D185-1989-4193-9D56-A236E2777D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6274D185-1989-4193-9D56-A236E2777D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6274D185-1989-4193-9D56-A236E2777D60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BEB23F8-BCE9-4CCE-A81D-382897820861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BEB23F8-BCE9-4CCE-A81D-382897820861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BEB23F8-BCE9-4CCE-A81D-382897820861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BEB23F8-BCE9-4CCE-A81D-382897820861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38CA9CAE-0E19-4682-B99C-16E9BB8AA1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B58422C-5FA4-41B6-B4B7-8676710665C1}
+	EndGlobalSection
+EndGlobal
