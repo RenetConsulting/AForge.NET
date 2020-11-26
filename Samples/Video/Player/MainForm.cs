@@ -205,5 +205,38 @@ namespace Player
                 }
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            VideoCaptureDevice videoSource = videoSourcePlayer.VideoSource as VideoCaptureDevice;
+
+            if (videoSource != null && videoSource is VideoCaptureDevice)
+            {
+                //videoSource.disp
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AsyncVideoSource videoSource = videoSourcePlayer.VideoSource as AsyncVideoSource;
+
+            if (videoSource != null && videoSource.NestedVideoSource != null)
+            {
+                VideoCaptureDevice device = videoSource.NestedVideoSource as VideoCaptureDevice;
+                if(device != null)
+                {
+                    device.DisplayPropertyPage(this.Handle);
+                }
+            }
+            //((AForge.Video.AsyncVideoSource)videoSourcePlayer.VideoSource).NestedVideoSource
+
+            //if (videoSource != null && videoSource is VideoCaptureDevice)
+            //{
+            //    videoSource.DisplayPropertyPage(this.Handle);
+            //}
+
+
+        }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Player (netcoreapp)", "Video\Player\Player (netcoreapp).csproj", "{39CFA615-B087-4BB3-A139-8BD4781EA3F6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.DirectShow (netcoreapp)", "..\Sources\Video.DirectShow\Video.DirectShow (netcoreapp).csproj", "{0545D03C-C30A-4C1A-8ECC-7C209D960F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{39CFA615-B087-4BB3-A139-8BD4781EA3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39CFA615-B087-4BB3-A139-8BD4781EA3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39CFA615-B087-4BB3-A139-8BD4781EA3F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0545D03C-C30A-4C1A-8ECC-7C209D960F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0545D03C-C30A-4C1A-8ECC-7C209D960F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0545D03C-C30A-4C1A-8ECC-7C209D960F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0545D03C-C30A-4C1A-8ECC-7C209D960F74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
