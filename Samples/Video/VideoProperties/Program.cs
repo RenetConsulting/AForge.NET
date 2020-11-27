@@ -9,11 +9,33 @@ namespace VideoProperties
         static void Main(string[] args)
         {
             var videoDevices = VideoDevices();
-            Console.WriteLine("Local capture devices");
-            foreach (FilterInfo device in videoDevices)
+            Console.WriteLine("Local video devices");
+            if (videoDevices.Count == 0)
             {
-                Console.WriteLine(device.Name);
+                Console.WriteLine("No local video devices");
             }
+            else
+            {
+                foreach (FilterInfo device in videoDevices)
+                {
+                    Console.WriteLine(device.Name);
+                }
+            }
+
+            var audioDevices = AudioDevices();
+            Console.WriteLine("Local audio devices");
+            if (audioDevices.Count == 0)
+            {
+                Console.WriteLine("No local audio devices");
+            }
+            else
+            {
+                foreach (FilterInfo device in audioDevices)
+                {
+                    Console.WriteLine(device.Name);
+                }
+            }
+
         }
 
         public static FilterInfoCollection VideoDevices()
@@ -24,5 +46,15 @@ namespace VideoProperties
 
             return videoDevices;
         }
+
+        public static FilterInfoCollection AudioDevices()
+        {
+            // show device list
+            // enumerate video devices
+            var audioDevices = new FilterInfoCollection(FilterCategory.AudioInputDevice);
+
+            return audioDevices;
+        }
+
     }
 }
