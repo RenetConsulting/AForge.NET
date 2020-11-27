@@ -9,17 +9,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Icons\**" />
+    <Compile Remove="Images\**" />
+    <EmbeddedResource Remove="Icons\**" />
+    <EmbeddedResource Remove="Images\**" />
+    <None Remove="Icons\**" />
+    <None Remove="Images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Properties\Resources.Designer.cs" />
     <Compile Remove="VideoCaptureDeviceForm.cs" />
     <Compile Remove="VideoCaptureDeviceForm.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Properties\Resources.resx" />
     <EmbeddedResource Remove="VideoCaptureDeviceForm.resx" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Video\Video (netstandard).csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
