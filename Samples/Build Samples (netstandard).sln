@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Player (netcoreapp)", "Video\Player\Player (netcoreapp).csproj", "{39CFA615-B087-4BB3-A139-8BD4781EA3F6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video.DirectShow (netstandard)", "..\Sources\Video.DirectShow\Video.DirectShow (netstandard).csproj", "{A4003B10-C350-4D33-A752-85AA89938898}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoProperties", "Video\VideoProperties\VideoProperties.csproj", "{3BC0EFE8-2CBE-44E0-9EC2-2FEE0392B0F1}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{39CFA615-B087-4BB3-A139-8BD4781EA3F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39CFA615-B087-4BB3-A139-8BD4781EA3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39CFA615-B087-4BB3-A139-8BD4781EA3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39CFA615-B087-4BB3-A139-8BD4781EA3F6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4003B10-C350-4D33-A752-85AA89938898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4003B10-C350-4D33-A752-85AA89938898}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4003B10-C350-4D33-A752-85AA89938898}.Release|Any CPU.ActiveCfg = Release|Any CPU
