@@ -112,6 +112,7 @@ namespace AForge.Video.DirectShow
             }
             catch
             {
+                throw;
             }
 			finally
 			{
