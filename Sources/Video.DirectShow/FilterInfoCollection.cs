@@ -76,64 +76,65 @@ namespace AForge.Video.DirectShow
             try
             {
                 // Get the system device enumerator
-                Type srvType = Type.GetTypeFromCLSID( Clsid.SystemDeviceEnum );
-                if ( srvType == null )
-                    throw new ApplicationException( "Failed creating device enumerator" );
+                Type srvType = Type.GetTypeFromCLSID(Clsid.SystemDeviceEnum);
+                if (srvType == null)
+                    throw new ApplicationException("Failed creating device enumerator");
 
                 // create device enumerator
-                comObj = Activator.CreateInstance( srvType );
-                enumDev = (ICreateDevEnum) comObj;
+                comObj = Activator.CreateInstance(srvType);
+                enumDev = (ICreateDevEnum)comObj;
 
                 // Create an enumerator to find filters of specified category
-                hr = enumDev.CreateClassEnumerator( ref category, out enumMon, 0 );
-                if ( hr != 0 )
-                    throw new ApplicationException( "No devices of the category" );
+                hr = enumDev.CreateClassEnumerator(ref category, out enumMon, 0);
+                if (hr != 0)
+                    throw new ApplicationException("No devices of the category");
 
                 // Collect all filters
                 IntPtr n = IntPtr.Zero;
-                while ( true )
+                while (true)
                 {
                     // Get next filter
-                    hr = enumMon.Next( 1, devMon, n );
-                    if ( ( hr != 0 ) || ( devMon[0] == null ) )
+                    hr = enumMon.Next(1, devMon, n);
+                    if ((hr != 0) || (devMon[0] == null))
                         break;
 
                     // Add the filter
-                    FilterInfo filter = new FilterInfo( devMon[0] );
-                    InnerList.Add( filter );
+                    FilterInfo filter = new FilterInfo(devMon[0]);
+                    InnerList.Add(filter);
 
                     // Release COM object
-                    Marshal.ReleaseComObject( devMon[0] );
+                    Marshal.ReleaseComObject(devMon[0]);
                     devMon[0] = null;
                 }
 
                 // Sort the collection
-                InnerList.Sort( );
+                InnerList.Sort();
             }
+            catch (NotImplementedException) { }
             catch
             {
                 throw;
             }
-			finally
-			{
-				// release all COM objects
-				enumDev = null;
-				if ( comObj != null )
-				{
-					Marshal.ReleaseComObject( comObj );
-					comObj = null;
-				}
-				if ( enumMon != null )
-				{
-					Marshal.ReleaseComObject( enumMon );
-					enumMon = null;
-				}
-				if ( devMon[0] != null )
-				{
-					Marshal.ReleaseComObject( devMon[0] );
-					devMon[0] = null;
-				}
-			}
+            finally
+            {
+                // release all COM objects
+                enumDev = null;
+                if (comObj != null)
+                {
+                    Marshal.ReleaseComObject(comObj);
+                    comObj = null;
+                }
+                if (enumMon != null)
+                {
+                    Marshal.ReleaseComObject(enumMon);
+                    enumMon = null;
+                }
+                if (devMon[0] != null)
+                {
+                    Marshal.ReleaseComObject(devMon[0]);
+                    devMon[0] = null;
+                }
+            }
 		}
     }
 }
